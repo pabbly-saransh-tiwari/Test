@@ -270,7 +270,11 @@ addEventListener('fetch', event => {
         headers: fetchHeaders,
         body,
       });
-  
+
+
+      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      console.log("This is my new commit from vscode on my pc");
       // Return the response received from the endpoint
       const responseBody = await response.text();
       return new Response(responseBody, { status: response.status, headers: response.headers });
@@ -278,5 +282,7 @@ addEventListener('fetch', event => {
       // Return a 500 status for unexpected errors
       return new Response(`Error: ${error.message}`, { status: 500 });
     }
+
+      
   }
   
