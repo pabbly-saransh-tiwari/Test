@@ -274,7 +274,10 @@ addEventListener('fetch', event => {
 
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      console.log("This is my new commit from vscode on my pc");
+      console.log("New commit form my side testing it on cloudflare");
+
+///////////////////////////////////////////////////////////////////////////////
+
       // Return the response received from the endpoint
       const responseBody = await response.text();
       return new Response(responseBody, { status: response.status, headers: response.headers });
