@@ -9,6 +9,7 @@ This Cloudflare Worker handles POST requests, fetches files from URLs, and forwa
 1. **Cloudflare Account**  
 2. Access to the Cloudflare dashboard.
 
+
 ---
 
 ## Setup
