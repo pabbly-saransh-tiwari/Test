@@ -20,6 +20,7 @@ This Cloudflare Worker handles POST requests, fetches files from URLs, and forwa
 2. **Create a New Worker**  
    - Navigate to the **Workers** section.
    - Click **Create a Service** and give your Worker a name.
+   3. Just making a change to show in **Cloudflare**
 
 3. **Add Your Worker Code**  
    - Open the **Worker editor**.
