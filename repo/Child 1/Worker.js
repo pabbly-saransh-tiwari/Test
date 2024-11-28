@@ -1,4 +1,4 @@
-addEventListener('fetch', event => {
+addEventListener('fetch', env , event => {
     // Attach the main handler function to incoming fetch events
     event.respondWith(handleRequest(event.request));
   });
@@ -12,7 +12,7 @@ addEventListener('fetch', event => {
 
 //////////////////////////////////////////////////New Comment From VS Code///////////////////////////////////////////////////////////
 
-    const CHECK_API_KEY = globalThis.pabbly_api_key; // Hardcoded API key for authentication
+    const CHECK_API_KEY = env.pabbly_api_key; // Hardcoded API key for authentication
     const requestHeaders = request.headers;
     const incomingApiKey = requestHeaders.get('pabbly_api_key');
     let fileExtension = null;
