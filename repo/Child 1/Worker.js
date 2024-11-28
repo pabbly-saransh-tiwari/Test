@@ -9,7 +9,10 @@ addEventListener('fetch', event => {
       return new Response('Method not allowed', { status: 405 });
     }
   
-    const CHECK_API_KEY = '3be0fa73-bd3b-4953-a5f7-3ebdfae0feea'; // Hardcoded API key for authentication
+
+//////////////////////////////////////////////////New Comment From VS Code///////////////////////////////////////////////////////////
+
+    const CHECK_API_KEY = globalThis.pabbly_api_key; // Hardcoded API key for authentication
     const requestHeaders = request.headers;
     const incomingApiKey = requestHeaders.get('pabbly_api_key');
     let fileExtension = null;
