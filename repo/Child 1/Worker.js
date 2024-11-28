@@ -3,7 +3,7 @@ addEventListener('fetch', env , event => {
     event.respondWith(handleRequest(event.request));
   });
   
-  async function handleRequest(request) {
+  async function handleRequest(request, env) {
     // Check if the request method is POST; otherwise, return a 405 status
     if (request.method !== 'POST') {
       return new Response('Method not allowed', { status: 405 });
