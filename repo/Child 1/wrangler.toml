@@ -6,3 +6,6 @@ type = "webpack"
 
 [build.upload]
 dir = "."
+
+[vars]
+pabbly_api_key = "1234567890"
